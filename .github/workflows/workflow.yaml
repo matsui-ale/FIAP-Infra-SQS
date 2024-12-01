@@ -28,7 +28,7 @@ jobs:
         
     - name: Verificando se bucket está criado
       run: |
-            BUCKET_NAME="terraform-tfstate-grupo12-fiap-2024"
+            BUCKET_NAME="terraform-tfstate-grupo12-fiap-2024-01"
             REGION="us-east-1"
 
             if ! aws s3api head-bucket --bucket "$BUCKET_NAME" 2>/dev/null; then
